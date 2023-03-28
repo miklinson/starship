@@ -1,0 +1,42 @@
+[username]
+style_user = "green bold"
+style_root = "red bold"
+format = "[$user]($style):"
+disabled = false
+show_always = true
+
+[character]
+error_symbol = "[✗](bold red)"
+
+[git_commit]
+commit_hash_length = 8
+format = "[$hash]($style) "
+style = "bold white"
+disabled = false
+
+[aws]
+symbol = "  "
+
+[docker_context]
+symbol = " "
+format = "via [$symbol$context]($style) "
+style = "blue bold"
+only_with_files = true
+detect_files = ["docker-compose.yml", "docker-compose.yaml", "Dockerfile"]
+detect_folders = []
+disabled = false
+
+[nodejs]
+format = "[ Node](bold green) "
+detect_files = ["package.json", ".node-version"]
+detect_folders = ["node_modules"]
+
+[php]
+format = "[ PHP]($style) "
+style = "bold purple"
+
+[package]
+symbol = " "
+
+[memory_usage]
+symbol = " "
